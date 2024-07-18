@@ -1,0 +1,79 @@
+[
+    {
+        "id": "1",
+        "name": "Single Page Application",
+        "slug": "single-page-application",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "2",
+        "name": "Database Management",
+        "slug": "database-management",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "3",
+        "name": "Authentication",
+        "slug": "authentication",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "4",
+        "name": "File Storage",
+        "slug": "file-storage",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "5",
+        "name": "E-commerce website",
+        "slug": "e-commerce-website",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "6",
+        "name": "Social Network",
+        "slug": "social-network",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "7",
+        "name": "Game Development",
+        "slug": "game-development",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "8",
+        "name": "Mobile Applications",
+        "slug": "mobile-applications",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "9",
+        "name": "Internet of Things",
+        "slug": "internet-of-things",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "10",
+        "name": "API Development",
+        "slug": "api-development",
+        "created_at": "2024-06-02 10:03:16",
+        "updated_at": "2024-06-02 10:03:16"
+    },
+    {
+        "id": "11",
+        "name": "Multi-page Application",
+        "slug": "multi-page-application",
+        "created_at": null,
+        "updated_at": null
+    }
+]

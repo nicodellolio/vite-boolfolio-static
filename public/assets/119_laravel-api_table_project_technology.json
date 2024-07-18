@@ -1,0 +1,158 @@
+[
+    {
+        "project_id": "2",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "2",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "3",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "3",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "4",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "4",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "5",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "5",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "6",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "6",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "6",
+        "technology_id": "3"
+    },
+    {
+        "project_id": "7",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "7",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "7",
+        "technology_id": "4"
+    },
+    {
+        "project_id": "8",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "8",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "8",
+        "technology_id": "4"
+    },
+    {
+        "project_id": "9",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "9",
+        "technology_id": "4"
+    },
+    {
+        "project_id": "9",
+        "technology_id": "5"
+    },
+    {
+        "project_id": "10",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "10",
+        "technology_id": "4"
+    },
+    {
+        "project_id": "10",
+        "technology_id": "5"
+    },
+    {
+        "project_id": "11",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "11",
+        "technology_id": "6"
+    },
+    {
+        "project_id": "12",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "12",
+        "technology_id": "7"
+    },
+    {
+        "project_id": "12",
+        "technology_id": "8"
+    },
+    {
+        "project_id": "13",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "13",
+        "technology_id": "7"
+    },
+    {
+        "project_id": "13",
+        "technology_id": "8"
+    },
+    {
+        "project_id": "14",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "14",
+        "technology_id": "7"
+    },
+    {
+        "project_id": "14",
+        "technology_id": "8"
+    },
+    {
+        "project_id": "15",
+        "technology_id": "1"
+    },
+    {
+        "project_id": "15",
+        "technology_id": "2"
+    },
+    {
+        "project_id": "15",
+        "technology_id": "4"
+    },
+    {
+        "project_id": "15",
+        "technology_id": "7"
+    },
+    {
+        "project_id": "15",
+        "technology_id": "8"
+    }
+]
