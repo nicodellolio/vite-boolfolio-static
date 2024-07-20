@@ -46,7 +46,7 @@ export default {
 <template>
 
   <div id="latest-projects" class="mb-5">
-    <div class="row my-row d-flex flex-row flex-nowrap h-100 overflow-scroll p-5">
+    <div class="row my-row d-flex flex-row flex-nowrap h-100 overflow-scroll">
       <div v-for="(project, index) in orderedProjects.slice(0, 5)" :key="index" class="col-12">
 
 

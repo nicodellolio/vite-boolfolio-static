@@ -1,5 +1,7 @@
 .container {
     height: calc((100vh - 48px) - 82px);
+    justify-content: space-evenly;
+    margin-top: 3rem;
 }
 
 .icons {
@@ -8,6 +10,7 @@
     max-width: 6rem;
     margin-left: -5rem;
     margin-top: 2rem;
+    flex-direction: column;
 
     >i {
         color: var(--bg-light);
@@ -21,12 +24,12 @@
     }
 }
 
-.paginator-pp {
+/* .paginator-pp {
     .btn-light {
         color: #590441;
     }
 
-}
+} */
 
 .image_box {
     gap: 2rem;
@@ -45,7 +48,10 @@ img.jumbo-img {
     z-index: 99;
     width: 30%;
     max-width: 690px;
+}
 
+img.jumbo-img.mobile-view {
+    display: none;
 }
 
 .jumbotron {
@@ -53,17 +59,11 @@ img.jumbo-img {
     width: 80%;
     max-width: 1125px;
 
-
-
     .jumbo-title {
         font-size: 600%;
         font-weight: 900;
         color: #ffffff;
         /* width: 60%; */
-    }
-
-    .jumbo-title.second {
-        margin-top: -3rem;
     }
 
 }
@@ -95,6 +95,14 @@ img.jumbo-img {
             font-size: 3rem;
         }
     }
+}
+
+#pentagon-down {
+    width: 200px;
+    position: absolute;
+    top: 83.5%;
+    left: -7.5%;
+    transform: rotate(-100deg);
 }
 
 .download_cv_box:hover {
@@ -145,6 +153,10 @@ h6:hover {
     padding-bottom: 0.5rem;
 }
 
+.my-row{
+    padding: 2rem;
+}
+
 .myCard {
     color: rgb(255, 255, 255);
 
@@ -184,13 +196,6 @@ h6:hover {
         margin-left: 1.5rem;
         color: var(--bg-light);
     }
-
-    /* h1:hover {
-        color: var(--bg-light);
-        transition: transform 1.5s ease-out;
-    } */
-
-
 }
 
 .hover-underline-animation {
@@ -216,16 +221,91 @@ h6:hover {
     transform-origin: bottom left;
 }
 
-.goTop {
-    width: 50px;
-    aspect-ratio: 1;
-    line-height: 2.2;
-    text-align: center;
-    border-radius: 100%;
-    background-color: #fff;
-    position: fixed;
-    a{
-        font-size: 1.5rem;
-        font-weight: 700
+@media screen and (max-width: 460px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+        margin-top: 1rem;
+        margin: auto 0;
     }
+
+    .icons {
+        display: none;
+
+        i {
+            display: none;
+        }
+    }
+
+    img.jumbo-img {
+        display: none;
+    }
+
+    img.jumbo-img.mobile-view {
+        display: block;
+        right: -12%;
+        width: 55%;
+        position: absolute;
+        bottom: 2.5rem;
+        right: 0;
+        z-index: 99;
+    }
+
+    .jumbotron {
+        max-width: 460px;
+
+        .jumbo-title {
+            font-size: 200%;
+        }
+    }
+
+    .download_cv_box {
+        display: none;
+    }
+
+    .typewrite {
+        width: 120%;
+    }
+
+    .link-to-latest-projects {
+        display: none;
+    }
+
+    #pentagon-down {
+        width: 200px;
+        position: absolute;
+        top: 89%;
+        left: -15%;
+        transform: rotate(-100deg);
+    }
+
+    /* LATEST PROJECTS */
+    #latest-projects {
+        width: 95%;
+        background-color: var(--bg-dark);
+        padding: 0;
+        z-index: 999;
+        overflow: hidden;
+    }
+
+    my-row{
+        padding: 1rem;
+    }
+
+    .myCard {
+        color: rgb(255, 255, 255);
+    
+        .card-body {
+            position: sticky;
+            bottom: 30%;
+            font-size: 1rem;
+            padding: 3rem 1rem 2rem;
+    
+            .description p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
 }

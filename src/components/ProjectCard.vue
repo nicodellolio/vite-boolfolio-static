@@ -87,9 +87,9 @@ export default {
 
                     <div class="technology">
 
-                      <div class="ms-2 technologies d-flex gap-1 fw-light">
+                      <div class="ms-2 technologies flex-wrap d-flex gap-1 fw-light">
 
-                        <span class="badge fw-normal px-3 py-2" v-for="tech in getTechnologiesForProject(project.id)"
+                        <span class="badge  fw-normal px-3 py-2" v-for="tech in getTechnologiesForProject(project.id)"
                           :key="tech.id">
                           {{ tech.name }}
                         </span>

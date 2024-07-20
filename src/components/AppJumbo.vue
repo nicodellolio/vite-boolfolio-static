@@ -82,9 +82,9 @@ export default {
 </script>
 
 <template>
-  <div class="container jumbotron mx-auto rounded-3 mt-5 d-flex justify-content-evenly">
+  <div class="container jumbotron rounded-3 d-flex">
 
-    <div class="icons d-flex w-75 flex-column">
+    <div class="icons d-flex w-75">
       <i class="devicon-css3-plain"></i>
       <i class="devicon-bootstrap-plain"></i>
       <i class="devicon-vuejs-plain-wordmark"></i>
@@ -119,8 +119,7 @@ export default {
             d="M245 116.2c-22.8-15.5-43.9-33.5-64.3-52.1-14.9-13.5-28.1-29.3-44.8-40.7-3.8-2.3-9.3-1.6-12 2C93.5 60.6 59.8 88.2 28 107.7c-3.4 1.3-7 3.5-6.9 7.7-2.9 14.1 11.6 31.9 17 45 14.3 25.8 27.4 52.1 39.2 79.1 5.5 9.6 24.4 3.6 34.1 5.2 20 .3 38.7.3 59.2 2.7 10.2 3.2 12.8-9 16.5-15.7 13.1-25.9 30.5-53.2 45.6-77.9 3.5-9 25.6-31.2 12.3-37.6zm-76 113.2c-27.1-3.7-54.3-.3-77.6-.6C76.6 190.9 53 157 38 119.3c35-21.2 67-47.6 94.2-78.1 31.5 29.3 61.9 60 97.4 84.6-21.9 35.6-41.9 66.2-60.6 103.6z">
           </path>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="pentagon-down" viewBox="0 0 270 270" fill="#fff1"
-          style="width: 200px; position: absolute; top: 82%; left: -6%; transform: rotate(-100deg);">
+        <svg xmlns="http://www.w3.org/2000/svg" id="pentagon-down" viewBox="0 0 270 270" fill="#fff1">
           <path
             d="M245 116.2c-22.8-15.5-43.9-33.5-64.3-52.1-14.9-13.5-28.1-29.3-44.8-40.7-3.8-2.3-9.3-1.6-12 2C93.5 60.6 59.8 88.2 28 107.7c-3.4 1.3-7 3.5-6.9 7.7-2.9 14.1 11.6 31.9 17 45 14.3 25.8 27.4 52.1 39.2 79.1 5.5 9.6 24.4 3.6 34.1 5.2 20 .3 38.7.3 59.2 2.7 10.2 3.2 12.8-9 16.5-15.7 13.1-25.9 30.5-53.2 45.6-77.9 3.5-9 25.6-31.2 12.3-37.6zm-76 113.2c-27.1-3.7-54.3-.3-77.6-.6C76.6 190.9 53 157 38 119.3c35-21.2 67-47.6 94.2-78.1 31.5 29.3 61.9 60 97.4 84.6-21.9 35.6-41.9 66.2-60.6 103.6z">
           </path>
@@ -133,7 +132,7 @@ export default {
       </p>
 
 
-      <a href="#latest-projects" class="">
+      <a href="#latest-projects" class="link-to-latest-projects">
         <div class="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style="opacity: 1;">
           <div class="scroll-prompt-arrow-container">
             <div class="scroll-prompt-arrow">
@@ -156,6 +155,7 @@ export default {
     </div>
 
     <img class="jumbo-img" src="/assets/uploads/jumbo.png" alt="">
+    <img class="jumbo-img mobile-view" src="/assets/uploads/jumbo-mobile.png" alt="">
   </div>
 
   <AppLatestProjects />
