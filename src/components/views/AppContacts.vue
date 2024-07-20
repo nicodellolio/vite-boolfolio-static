@@ -78,7 +78,6 @@ export default {
 
         }
 
-
         h1 {
             display: inline-block;
             color: var(--bg-dark);
@@ -136,6 +135,27 @@ export default {
 
 .margin-50{
     margin-top: 15%;
+}
+
+@media screen and (max-width: 460px) {
+    .container{
+        margin-top: 40%;
+        width: 95%;
+
+        a.contact-link{
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: column;
+            h1{
+                margin: -0.5rem 0 0 -1rem;
+            }
+        }
+    
+        .contacts-list-box{
+            margin: 2rem auto;
+        }
+    }
+
 }
 
 </style>    

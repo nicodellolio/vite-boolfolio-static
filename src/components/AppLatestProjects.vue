@@ -50,7 +50,7 @@ export default {
       <div v-for="(project, index) in orderedProjects.slice(0, 5)" :key="index" class="col-12">
 
 
-        <div class="card h-100 myCard overflow-scroll">
+        <div class="card myCard overflow-scroll">
           <div class="title_box d-flex text-center align-items-center text-uppercase justify-content-center py-3">
 
             <h3 class="card-title pt-2">

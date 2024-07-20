@@ -93,7 +93,7 @@ export default {
       <i class="devicon-php-plain"></i>
     </div>
 
-    <div class="left-side ps-3 z-2">
+    <div class="left-side ps-1 z-2">
 
       <div class="title-box">
         <h1 class="jumbo-title">
@@ -126,7 +126,7 @@ export default {
         </svg>
       </div>
 
-      <p class="fs-2 w-50 jumbo-pp-text">
+      <p class="w-50 jumbo-pp-text">
         Welcome to my Portfolio. Here I collect some of the projects I've created in
         these years. Have fun!
       </p>

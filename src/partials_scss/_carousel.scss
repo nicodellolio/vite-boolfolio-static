@@ -36,7 +36,7 @@ $animationSpeed: 15s;
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(200px * 20);
+		width: calc(200px * 18);
 	}
 	
 	.slide {
@@ -44,7 +44,7 @@ $animationSpeed: 15s;
 		width: 250px;
 
 		i{
-			font-size: 6rem;
+			font-size: 4rem;
 			
 			span{
 				font-size: 1rem;
@@ -55,5 +55,23 @@ $animationSpeed: 15s;
 	}
 	i:hover{
 		scale: 1.2;
+	}
+
+	@media screen and (max-width: 460px) {
+
+		.slide-track{
+			height: 100px;
+			width: calc(200px*10);	
+		}
+		.slide{
+			i{
+				font-size: 3rem;
+			}
+		}
+		span{
+			position: relative;
+			top: 2rem;
+			left: -4rem;
+		}
 	}
 }

@@ -17,10 +17,6 @@ export default {
                     "name": "Bootstrap"
                 },
                 {
-                    "icon": "devicon-vuejs-plain-wordmark",
-                    "name": "VueJS"
-                },
-                {
                     "icon": "devicon-mysql-original",
                     "name": "MYSQL"
                 },
@@ -42,7 +38,7 @@ export default {
                 },
                 {
                     "icon": "devicon-vscode-plain",
-                    "name": "VS Code"
+                    "name": "VS"
                 },
                 {
                     "icon": "devicon-javascript-plain",
@@ -55,6 +51,10 @@ export default {
                 {
                     "icon": "devicon-vitejs-plain",
                     "name": "Vite"
+                },
+                {
+                    "icon": "devicon-vuejs-plain-wordmark",
+                    "name": "VueJS"
                 },
                 {
                     "icon": "devicon-github-original colored",
@@ -73,9 +73,9 @@ export default {
 
         <h1 class="text-end a-bit-about-me">A bit about me</h1>
 
-        <div class="about-me d-flex">
+        <div class="about-me">
 
-            <img class="rounded-5 mt-5" src="/assets/uploads/about_img.jpg" alt="">
+            <img class="rounded-5" src="/assets/uploads/about_img.jpg" alt="">
 
             <div class="right-side">
 
@@ -116,6 +116,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.container{
+    margin-top: 3rem;
+}
 .about-me {
     display: flex;
 
@@ -165,6 +168,35 @@ export default {
     font-weight: 800;
     text-transform: lowercase;
     color: var(--bg-lighter)
+}
+
+@media screen and (max-width: 460px) {
+
+    .container{
+        margin-top: 1rem;
+    }
+
+    h1.a-bit-about-me{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .about-me{
+        display: block;
+        img{
+            width: 100%
+        }
+    }
+    .right-side{
+        .all-about-me{
+            padding: 0 1rem;
+            width: 100%;
+            font-size: 1rem
+        }
+    }
+
+    .small-chalk{
+        margin-left: 1rem
+    }
 }
 
 @import '../../partials_scss/_carousel.scss';
