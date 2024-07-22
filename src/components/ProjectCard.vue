@@ -71,25 +71,25 @@ export default {
                 </h3>
 
               </div>
-              <div class="card-body d-flex gap-5">
-                <div class="left-side w-50">
+              <div class="card-body gap-5">
+                <div class="left-side">
                   <img class="img-single-project w-100" :src="project.preview_image" alt="">
                 </div>
-                <div class="right-side w-50">
-                  <div class="tech-type d-flex align-items-center  mb-4">
+                <div class="right-side">
+                  <div class="tech-type d-flex flex-column mt-1 mb-4">
 
                     <div v-for="type in types">
                       <span v-if="type.id == project.type_id"
-                        class="type bg-light-trasparent w-adapt px-3 py-1 rounded">
+                        class="type bg-light-trasparent rounded px-2 py-1">
                         {{ type.name }}
                       </span>
                     </div>
 
                     <div class="technology">
 
-                      <div class="ms-2 technologies flex-wrap d-flex gap-1 fw-light">
+                      <div class="technologies fw-light">
 
-                        <span class="badge  fw-normal px-3 py-2" v-for="tech in getTechnologiesForProject(project.id)"
+                        <span class="badge" v-for="tech in getTechnologiesForProject(project.id)"
                           :key="tech.id">
                           {{ tech.name }}
                         </span>
@@ -99,12 +99,13 @@ export default {
 
                   </div>
 
-                  <div class="description w-75 fs-4">
+                  <div class="description fs-4">
                     {{ project.description }}
-                  </div>
 
-                  <div class="duration w-75 fs-4 mt-4">
-                    <h4 class="fw-bold">Project Duration:</h4>
+                  </div>
+                  
+                  <div class="duration fs-4">
+                    <h4 class="fw-semibold d-inline-block">Project Duration:</h4>
                     {{ project.project_duration }}
                   </div>
 
@@ -117,11 +118,11 @@ export default {
 
 
                   <RouterLink
-                    class="btn btn-drounded opacity-low text-decoration-none border text-light p-bg-light px-3 py-2 fs-5"
+                    class="btn btn-drounded opacity-low text-decoration-none border look-website text-light p-bg-light px-3 py-2"
                     :to="{ name: 'NotFound' }">
                     Have a better look to the website
                   </RouterLink>
-                  <a target="_blank" class="btn btn-github text-decoration-none text-light p-bg-light px-3 py-1 fs-5"
+                  <a target="_blank" class="btn btn-github text-decoration-none text-light p-bg-light px-3 py-1"
                     :href="project.link_to_source_code">
                     <img src="/github-6980894_1280.png" alt="Github link">
                     View Source Code
@@ -150,6 +151,15 @@ export default {
   color: #ffffffa7;
   border: 1px inset #ffffff55;
 
+  .card-body{
+    display: flex;
+    position: relative;
+  }
+
+  .left-side, .right-side{
+    width: 50%;
+  }
+
   .title_box {
     background-color: var(--bg-medium);
     background-image: var(--bs-gradient);
@@ -159,6 +169,17 @@ export default {
     .card-title {
       font-weight: 100;
     }
+  }
+}
+
+.technologies{
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+
+  span{
+    font-weight: 400;
+    padding: 0.5rem .75rem;
   }
 }
 
@@ -175,7 +196,7 @@ export default {
 
 } */
 
-.projectDuration {
+.duration {
   position: absolute;
   bottom: 0;
   width: 90%;
@@ -188,9 +209,9 @@ export default {
   /* width: 84%; */
 }
 
-.projectDuration {
+.duration {
   position: absolute;
-  bottom: 0;
+  bottom: 0.5rem;
   width: 90%;
   padding-bottom: 0.5rem;
 }
@@ -198,6 +219,15 @@ export default {
 .left-side {
   max-height: 60vh;
   overflow: scroll;
+}
+
+.project-buttons{
+  margin-top: 2rem;
+  margin-bottom: -1.5rem;
+
+  a{
+    font-size: 20px;
+  }
 }
 
 .btn-github {
@@ -219,5 +249,58 @@ export default {
 .bg-light-trasparent {
   background-color: #ffffff4a;
   color: var(--bg-dark);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 460px) {
+
+  .myCard{
+
+    .card-body{
+      flex-direction: column;
+    }
+
+    .left-side, .right-side{
+      width: 100%;
+      height: fit-content;
+      overflow: auto;
+    }
+
+    .right-side div{
+      align-items: center;
+    }
+
+    .type{
+      font-size: 1.25rem;
+    }
+
+    .technologies{
+      flex-wrap: nowrap;
+      gap: 0.1rem;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+
+      span{
+        font-size: .75rem;
+        font-weight: 100
+      };
+    }
+
+    .duration{
+      position: static;
+      margin-top: 3rem;
+    }
+
+    .project-buttons{
+      margin-top: 1rem;
+      flex-direction: column;
+
+      .look-website{
+        font-size: 1rem;
+      }
+    }
+
+  }
 }
 </style>
