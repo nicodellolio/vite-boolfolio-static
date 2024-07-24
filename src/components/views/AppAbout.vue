@@ -124,7 +124,7 @@ export default {
 
     img {
         width: 50%;
-        height: fit-content;
+        height: 100%;
     }
 }
 
