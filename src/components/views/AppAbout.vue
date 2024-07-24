@@ -183,7 +183,7 @@ export default {
     .about-me{
         display: block;
         img{
-            width: 100%
+            width: 100%;
 height: 100%;
         }
     }
