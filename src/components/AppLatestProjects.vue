@@ -45,6 +45,10 @@ export default {
 
 <template>
 
+
+  <img class="jumbo-img" src="/assets/uploads/jumbo.png" alt="">
+  <img class="jumbo-img mobile-view" src="/assets/uploads/jumbo-mobile.png" alt="">
+
   <div id="latest-projects" class="mb-5">
     <div class="row my-row d-flex flex-row flex-nowrap h-100 overflow-scroll">
       <div v-for="(project, index) in orderedProjects.slice(0, 5)" :key="index" class="col-12">

@@ -153,10 +153,8 @@ export default {
         </a>
       </div>
     </div>
-
-    <img class="jumbo-img" src="/assets/uploads/jumbo.png" alt="">
-    <img class="jumbo-img mobile-view" src="/assets/uploads/jumbo-mobile.png" alt="">
   </div>
+
 
   <AppLatestProjects />
 
